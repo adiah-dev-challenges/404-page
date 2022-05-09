@@ -1,0 +1,72 @@
+@use '../abstracts/' as abs;
+
+body {
+	padding: 1.25rem 1.5rem;
+}
+
+header {
+	margin-bottom: 4rem;
+	h1 {
+		font-family: var(--ff-header);
+		font-weight: 700;
+		font-size: var(--fs-500);
+		color: var(--clr-heading);
+	}
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.image {
+		width: abs.rem(286);
+		margin-bottom: abs.rem(78);
+	}
+
+	.text {
+
+		display: flex;
+		flex-direction: column;
+
+		.intro {
+			font-size: var(--fs-800);
+			font-weight: 700;
+			line-height: 1.5;
+			margin-bottom: abs.rem(30);
+			letter-spacing: -0.035em;
+		}
+
+		p {
+			font-size: var(--fs-400);
+			line-height: 1.5;
+			margin-bottom: abs.rem(66);
+		}
+
+		a {
+			display: block;
+			text-decoration: none;
+			background-color: var(--clr-text);
+			color: white;
+			padding: 1.5rem 2.6875rem;
+			align-self: flex-start;
+			margin-bottom: abs.rem(114);
+			font-size: var(--fs-300);
+		}
+	}
+
+}
+
+footer {
+	// position: sticky;
+	// bottom: 0;
+	margin-top: auto;
+	font-size: var(--fs-300);
+	font-family: var(--ff-sans);
+	font-weight: 500;
+	color: var(--clr-faded);
+
+	span {
+		font-weight: 700;
+	}
+}
