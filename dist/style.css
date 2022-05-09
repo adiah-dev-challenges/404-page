@@ -14,12 +14,12 @@
 }
 @media (min-width: 43.75em) {
   :root {
-    --fs-300: 1rem;
-    --fs-400: 1.1875rem;
+    --fs-300: 0.875rem;
+    --fs-400: 1.5rem;
     --fs-500: 2rem;
     --fs-600: 2.827rem;
-    --fs-700: 4.9375rem;
-    --fs-800: 5.653rem;
+    --fs-700: 3.5;
+    --fs-800: 4rem;
   }
 }
 
@@ -93,9 +93,21 @@ select {
 body {
   padding: 1.25rem 1.5rem;
 }
+@media (min-width: 43.75em) {
+  body {
+    padding: 0;
+  }
+}
 
 header {
   margin-bottom: 4rem;
+}
+@media (min-width: 43.75em) {
+  header {
+    margin-top: 2.5rem;
+    margin-inline: auto;
+    width: 86%;
+  }
 }
 header h1 {
   font-family: var(--ff-header);
@@ -109,13 +121,33 @@ main {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 43.75em) {
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 7.5rem;
+    width: 86%;
+    margin-inline: auto;
+  }
+}
 main .image {
   width: 17.875rem;
   margin-bottom: 4.875rem;
 }
+@media (min-width: 43.75em) {
+  main .image {
+    width: 48%;
+    margin-bottom: 0;
+  }
+}
 main .text {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 43.75em) {
+  main .text {
+    width: 52%;
+  }
 }
 main .text .intro {
   font-size: var(--fs-800);
@@ -123,6 +155,11 @@ main .text .intro {
   line-height: 1.5;
   margin-bottom: 1.875rem;
   letter-spacing: -0.035em;
+}
+@media (min-width: 43.75em) {
+  main .text .intro {
+    margin-bottom: 2.25rem;
+  }
 }
 main .text p {
   font-size: var(--fs-400);
@@ -132,20 +169,38 @@ main .text p {
 main .text a {
   display: block;
   text-decoration: none;
-  background-color: var(--clr-text);
+  background-color: var(--clr-heading);
   color: white;
   padding: 1.5rem 2.6875rem;
   align-self: flex-start;
   margin-bottom: 7.125rem;
   font-size: var(--fs-300);
 }
+@media (min-width: 43.75em) {
+  main .text a {
+    margin-bottom: 0;
+  }
+}
 
 footer {
-  margin-top: auto;
   font-size: var(--fs-300);
   font-family: var(--ff-sans);
   font-weight: 500;
   color: var(--clr-faded);
+}
+@media (min-width: 43.75em) {
+  footer {
+    width: 86%;
+    margin-inline: auto;
+    margin-bottom: 1.5rem;
+    margin-top: 18.75rem;
+  }
+}
+footer p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-inline: auto;
 }
 footer span {
   font-weight: 700;
