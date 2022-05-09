@@ -175,10 +175,14 @@ main .text a {
   align-self: flex-start;
   margin-bottom: 7.125rem;
   font-size: var(--fs-300);
+  transition: background-color 300ms ease-in-out;
 }
 @media (min-width: 43.75em) {
   main .text a {
     margin-bottom: 0;
+  }
+  main .text a:hover, main .text a:focus {
+    background-color: black;
   }
 }
 

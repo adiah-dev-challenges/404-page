@@ -84,9 +84,15 @@ main {
 			align-self: flex-start;
 			margin-bottom: abs.rem(114);
 			font-size: var(--fs-300);
+			transition: background-color 300ms ease-in-out;
 
 			@include abs.breakpoint(medium) {
 				margin-bottom: 0;
+
+				&:hover,
+				&:focus {
+					background-color: black;
+				}
 			}
 		}
 	}
